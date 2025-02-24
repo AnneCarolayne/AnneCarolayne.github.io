@@ -1,5 +1,6 @@
 /*Seleciona o elemento HTML pelo seu id e o armazena*/
 const form = document.getElementById("form");
+const disciplina = document.getElementById("disciplina");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
@@ -14,6 +15,11 @@ form.addEventListener("submit", (event) => {
 
 /*Faz com que uma função de verificação seja chamado quando o campo
  perde o foco */
+
+disciplina.addEventListener("blur", () => {
+    checkInputDisciplina();
+})
+
 username.addEventListener("blur", () => {
     checkInputUsername();
 })
@@ -27,6 +33,20 @@ passwordConfirmation.addEventListener("blur", () => {
     checkInputPasswordConfirmation();
 })
 
+function checkInputDisciplina() {
+    const disciplinaValue = disciplina.value;
+
+    if (disciplinaValue === "") {
+        errorInput(disciplina, "O nome da disciplina é obrigatório!")
+    }else{
+        const formItem = disciplina.parentElement;
+        formItem.className = "form-content";
+    }
+
+};
+
+
+
 /*Checa se o nome do usuário foi preenchido*/
 function checkInputUsername() {
     const usernameValue = username.value;
@@ -34,7 +54,7 @@ function checkInputUsername() {
     if (usernameValue === "") {
         errorInput(username, "O nome de usuário é obrigatório!");
 
-    }else{
+    } else {
         const formItem = username.parentElement;
         formItem.className = "form-content";
     }
@@ -48,7 +68,7 @@ function checkInputEmail() {
     if (emailValue === "") {
         errorInput(email, "O email é obrigatório!");
 
-    }else{
+    } else {
         const formItem = email.parentElement;
         formItem.className = "form-content";
 
@@ -62,9 +82,9 @@ function checkInputPassword() {
     if (passwordValue === "") {
         errorInput(password, "A senha é obrigatória!");
 
-    }else if(passwordValue.length<8){
+    } else if (passwordValue.length < 8) {
         errorInput(password, "A senha precisa ter no mínimo 8 caracteres.");
-    }else{
+    } else {
         const formItem = password.parentElement;
         formItem.className = "form-content";
     }
@@ -79,9 +99,9 @@ function checkInputPasswordConfirmation() {
     if (confirmationPasswordValue === "") {
         errorInput(passwordConfirmation, "A confirmação de senha é obrigatória.");
 
-    }else if(confirmationPasswordValue !== passwordValue){
+    } else if (confirmationPasswordValue !== passwordValue) {
         errorInput(passwordConfirmation, "Senha inválida");
-    }else{
+    } else {
         const formItem = passwordConfirmation.parentElement;
         formItem.className = "form-content";
     }
@@ -89,21 +109,22 @@ function checkInputPasswordConfirmation() {
 };
 
 /*Checagem de erros no preenchimento do formulário */
-function checkForm(){
+function checkForm() {
+    checkInputDisciplina();
     checkInputUsername();
     checkInputEmail();
     checkInputPassword();
-    checkInputPasswordConfirmation(); 
+    checkInputPasswordConfirmation();
 
     const formItens = form.querySelectorAll(".form-content");
 
-    const isValid = [...formItens].every( (item) => {
+    const isValid = [...formItens].every((item) => {
         return item.className === "form-content";
     })
 
-    if (isValid){
+    if (isValid) {
         alert("Login concluído com sucesso!")
-    }else{
+    } else {
         alert("Preencha todos os campos corretamente.")
     }
 
