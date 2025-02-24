@@ -29,7 +29,7 @@ header a {
     font-weight: bolder;
     display: inline-block;
     transition: .2s;
-    color: rgba(255, 174, 0, 0.911) !important;
+    color: rgba(255, 174, 0, 0.911) ;
 }
 
 /*Faz com que os links do cabeçalho  cresçam e fiquem amarelo */
