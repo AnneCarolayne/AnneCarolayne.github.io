@@ -1,0 +1,68 @@
+* {
+    color: rgba(255, 174, 0, 0.911) !important;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Cria o contorno preto */
+}
+
+/* Estilo do Cabeçalho*/
+header {
+    padding: 40px 4% ;
+}
+
+/* Estilo básico de todos os elementos do cabeçalho que estão dentro do container interface */
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo dos links que ficam no cabeçalho (logo, início, etc.) */
+header a {
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    transition: .2s;
+}
+
+/*Faz com que os links do cabeçalho  cresçam e fiquem amarelo */
+header a:hover {
+    color: yellow ;
+    transform: scale(1.05);
+}
+
+/* Retira os marcadores da lista não ordenada */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Alinha os elementos da linha e dá um espaçamento entre eles*/
+header nav li {
+    display: inline-block;
+    padding: 0 80px;
+}
+
+/* Torna os elementos dentro do container flex flexíveis */
+.flex {
+    display: flex;
+}
+
+/* Estilo do fundo da página */
+body {
+    background-color: #001e4d;
+}
+
+.titulo{
+    text-align: center;
+padding-bottom: 40px;
+}
+
+#formulas{
+    padding: 40px 4% ;
+}
+ 

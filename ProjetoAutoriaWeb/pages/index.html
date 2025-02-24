@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Park Science</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="jogo.html">
+                    <img src="../images/logosps.png" alt="South Park Science" width="170px" height="170px" />
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+
+                <ul>
+                    <li><a href="eps.html">Episódios</a></li>
+                    <li><a href="aba01.html">Disciplinas</a></li>
+                    <li><a href="formulario.html">Simulados</a></li>
+                    <li><div class="dropdown">
+                        <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-auto-close="outside" style="border-color:transparent;">
+                            Entrar
+                        </button>
+                        <form class="dropdown-menu p-4">
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormEmail2" class="form-label" style="color: black;"
+                                    required>Email</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                                    placeholder="email@exemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormPassword2" class="form-label" style="color: black;">Senha</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                                    placeholder="senha" required>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                    <label class="form-check-label" for="dropdownCheck2" style="color: black;">
+                                        Lembrar sempre
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </form>
+                    </div></li>
+                </ul>
+            </nav>
+
+            
+        </div><!--interface-->
+        <div class="fundo">
+            <video autoplay muted loop>
+                <source src="../science.mp4" type="video/mp4">
+            </video>
+        </div><!--fundo-->
+
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>BEM VINDO AO SOUTH PARK SCIENCE!</h1>
+                        <br />
+                        <p>
+                            O seriado South Park, embora seja uma comédia satírica, pode ser relacionado a várias
+                            matérias escolares, principalmente devido aos temas sociais, culturais, políticos e éticos
+                            que aborda de forma irônica e exagerada. Explore seus conteúdos com um toque de diversão,
+                            tornando o seu aprendizado tão animado quanto um episódio de seu desenho favorito!
+                            Pronto para embarcar nessa jornada científica?
+                        </p>
+                        <br />
+                        <div class="btn-contato">
+                            <a href="aba01.html">
+                                <button>Aprender agora</button>
+                            </a>
+                        </div><!--btn-contato-->
+                    </div> <!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="../images/cartman.frente.png" alt="cartman" width="300px" height="300px" />
+                    </div> <!--img-topo-site-->
+                </div> <!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Siga-nos</h1>
+                <p>Divulgue seus resultados nas redes sociais</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+            </div><!--footer_contacts-->
+
+            <ul class="footer-list" >
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Músicas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Especiais</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Equipe</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Front-end</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Back-end</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Full-stack</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+
+                <p>
+                    Ao inscrever-se, você concorda em receber notícias do South Park Science e outros e-mails de marketing. 
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div><!--footer_content-->
+
+        <div id="footer_copyright">
+            &#169
+            2025 South Park Science. Todos os direitos reservados
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

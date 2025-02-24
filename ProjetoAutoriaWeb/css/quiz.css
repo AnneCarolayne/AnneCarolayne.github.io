@@ -1,0 +1,85 @@
+/*Estilo do fundo da página */
+body {
+    background-color: #001e4d;
+}
+
+/*Estilo da div que engloba todos os elemnetos da página (só não engloba o script)*/
+.app {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/*Estilo do título "Geometria Plana" que é um h1 dentro do container app*/
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+/*Estilo do quiz em si, dos seus botões e do título da pergunta*/
+.quiz {
+    padding: 20px 0;
+}
+
+/*Estilo do título da pergunta*/
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+/*Estilo dos botões do formulário*/
+.btn {
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/*Estilos apenas dos botões que não estão desabilitados quando o cursor do mouse está sobre eles.*/
+.btn:hover:not([disabled]){
+    background-color: #222;
+    color: #fff;
+}
+
+/*Faz com que apareça aquele ícone de proibido quando o botão está desabilitado*/
+.btn:disabled{
+    cursor: no-drop;
+}
+
+/*Estilo do botão next do formulário*/
+#next-btn{
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Muda a cor se a resposta estiver certa*/
+.correct{
+    background-color: #9aeabc;
+}
+
+/*Muda a cor se a resposta estiver errada*/
+.incorrect{
+    background-color: #ff9393;
+}

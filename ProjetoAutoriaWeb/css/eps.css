@@ -1,0 +1,112 @@
+
+/* Estilo do Cabeçalho*/
+header {
+    padding: 40px 4%;
+}
+
+/* Estilo básico de todos os elementos do cabeçalho que estão dentro do container interface */
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo dos links que ficam no cabeçalho (logo, início, etc.) */
+header a {
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    transition: .2s;
+    color: rgba(255, 174, 0, 0.911);
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Cria o contorno preto */
+}
+
+/*Faz com que os links do cabeçalho  cresçam e fiquem amarelo */
+header a:hover {
+    color: yellow;
+    transform: scale(1.05);
+}
+
+/* Retira os marcadores da lista não ordenada */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Alinha os elemntos da linha e dá um espaçamento entre eles*/
+header nav li {
+    display: inline-block;
+    padding: 0 80px;
+}
+
+/* Torna os elementos dentro do container flex flexíveis */
+.flex {
+    display: flex;
+}
+
+/* Estilo do fundo da página */
+body {
+   background-color: rgb(19, 157, 150);
+}
+
+/* Estilo do container que armazena o título da página */
+.titulo {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 45px;
+    text-align: center;
+    color: rgba(255, 174, 0, 0.911);
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Cria o contorno preto */
+} 
+
+/* Estilo da seção episódios da página */
+.episodios .tabela {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px 20px;
+    color: #dddddd !important;
+}
+
+/*Estilo das colunas de título da tabela que está dentro do container tabela dentro da seção texto */
+.episodios .tabela table th {
+    text-align: center;
+    font-size: 20px;
+    background-color: #ffffff77;
+    font-weight: bold;
+    color:  #000000;
+
+}
+
+/*Estilo das colunas da tabela que não são de título */
+.episodios .tabela table td{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Estilo tamanho específico de cada coluna de título da tabela que está dentro 
+do container tabela dentro da seção texto */
+.episodios .tabela table tr .c1{
+    width: 20%;
+}
+.episodios .tabela table tr .c2{
+    width: 17%;
+}
+.episodios .tabela table tr .c3{
+    width: 27%;
+}
+.episodios .tabela table tr .c4{
+    width: 60%;
+}

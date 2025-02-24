@@ -1,0 +1,83 @@
+/*Estilo da tag principal do jogo, a qual contém todos os elementos*/
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../images/gamefundo.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+/*Estilo do cabeçalho do jogo, a qual tem o nome do jogador e o tempo*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+}
+
+/*Estilo do conteiner que tem as cartas*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Estilo de cada carta*/
+.card{
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    background-color: #ccc;
+}
+
+/*Estilo das faces de cada cada carta*/
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid red;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+
+/*Estilo da face da frente de cada carta*/
+.front{
+    background-color: red;
+    transform: rotateY(180deg);
+}
+
+/*Estilo da face de trás de cada carta*/
+.back{
+    background-image: url("../images/carta.png");
+    backface-visibility: hidden;
+}
+ 
+/*Roda a carta/ revela ela*/
+.reveal-card{
+    transform: rotateY(180deg);
+}
+
+/*Faz com que a carta fique meio branca quando ele acerta*/
+.disabled-card{
+    filter: saturate(0);
+    opacity: 0.5;
+}

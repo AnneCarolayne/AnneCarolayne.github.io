@@ -1,0 +1,93 @@
+/*Estilo do fundo da página */
+body{
+    background-color: #121212;
+    background-image: url(../images/kenny.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilo da div que engloba todos os elemnetos da página, 
+incluindo o título e o form (só não engloba o script)*/
+.container{
+    background-color: #ffffff;
+    border-radius: 14px;
+    margin:14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+}
+
+/*Estilo do cabeçalho da página, o qual é uma section que tem somente o título */
+.header{
+    background: linear-gradient(120deg, #ff9204 0%, #e48203 100%);
+    padding: 24px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/*Espaçamento interno em todos os lados do formulário*/
+.form{
+    padding: 18px;
+}
+
+/*Estilo de todos os form-content do formulário, o qual contém o input, o label e a mensagem de erro */
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+/*Estilo de todos os label dos form-content do formulário */
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+    color:#000000;
+}
+
+/*Estilo de todos os input dos form-content do formulário */
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+/*Estilo de todos os links que guardam a mensagem de erro dos form-content do formulário */
+.form-content a{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  visibility: hidden;
+}
+
+/*Estilo do botão submit do formulário*/
+.form button{
+    background: linear-gradient(120deg, #ff9204 0%, #e48203 100%);
+    color: #ffffff;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+/*Muda a cor da borda do input caso não seja preenchido */
+.form-content.error input{
+    border-color: #ff3b25;
+}
+
+/*Muda a cor da mensagem de erro e a torna visível caso haja algum erro*/
+.form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
+}

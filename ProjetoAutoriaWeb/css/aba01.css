@@ -1,0 +1,133 @@
+/*Estilo geral da página*/
+* {
+    color: rgba(255, 174, 0, 0.911);
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Cria o contorno preto */
+}
+
+/* Estilo do Cabeçalho*/
+header {
+    padding: 40px 4%;
+}
+
+/* Estilo básico de todos os elementos do cabeçalho que estão dentro do container interface */
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo dos links que ficam no cabeçalho (logo, início, etc.) */
+header a {
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    transition: .2s;
+}
+
+/*Faz com que os links do cabeçalho  cresçam e fiquem amarelo */
+header a:hover {
+    color: yellow;
+    transform: scale(1.05);
+}
+
+/* Retira os marcadores da lista não ordenada */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Alinha os elemntos da linha e dá um espaçamento entre eles*/
+header nav li {
+    display: inline-block;
+    padding: 0 80px;
+}
+
+/* Torna os elementos dentro do container flex flexíveis */
+.flex {
+    display: flex;
+    padding-bottom: 120px;
+}
+
+/* Estilo do fundo da página */
+body {
+    background-image: url(../images/tfundot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Estilo básico da seção materias*/
+.materias {
+    padding: 40px 4%;
+    margin-bottom: 80px;
+}
+
+/*Estilo de todos os containers chamados interface*/
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*Estilo do título h1 que está no conteiner interface que está na seção materias */
+.materias .interface h1 {
+    padding: 40px 4%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/*Distribui o espaço igualmente ao redor de cada item do container flex que está
+ na seção materiais*/
+.materias .flex {
+    justify-content: space-around;
+}
+
+/* Estilo das divs chamadas img-port que possuem imagens como fundo */
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: 7s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+/*Faz com que apareça a imagem toda quando o mouse passa por cima da div img-port*/
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+/*Estilo da div overlay que está dentro da div img-port */
+.img-port .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.5;
+}
+
+/*Torna a div overlay visível quando o mouse passar por cima dela*/
+.img-port .overlay:hover {
+    opacity: 1;
+}
+
+/* Remove o sublinhado dos links dentro do container overlay 
+(Remove o sublinhado dos nomes das disciplinas) */
+.overlay a{
+    text-decoration: none; 
+}
