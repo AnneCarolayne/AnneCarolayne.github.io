@@ -234,6 +234,7 @@ input, select, textarea {
 		width: 1400px;
 	}
 
+
 		@media screen and (max-width: 1680px) {
 
 			.container {
@@ -2469,7 +2470,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: #32433a;
+		background: #403243;
 		color: #fff;
 	}
 
